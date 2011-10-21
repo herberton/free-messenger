@@ -1,5 +1,7 @@
+package cliente;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.KeyEvent;
 import java.io.IOException;
 import java.io.PrintStream;
 import java.net.ConnectException;
@@ -8,28 +10,14 @@ import java.net.UnknownHostException;
 
 import javax.swing.JOptionPane;
 
+import tela.Janela;
+
+
 public class Cliente {
 
 	public static Janela cli;
 
 	public static boolean enviar = false;
-
-	public static void main(String[] args) throws UnknownHostException,
-			IOException {
-
-		Janela cli = new Janela();
-		cli.criaJanela();
-
-		cli.btn_enviar.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				click(e);
-			}
-		});
-
-		new Cliente("10.72.2.138", 8080, cli).executa();
-
-	}
-
 	private String host;
 	private int porta;
 	public String nome;
@@ -84,6 +72,26 @@ public class Cliente {
 
 	public static void click(ActionEvent e) {
 		enviar = !cli.enviar.getText().isEmpty();
+		cli.enviar.grabFocus(); 
 	}
+	
+	public static void main(String[] args) throws UnknownHostException,
+	IOException {
+
+Janela cli = new Janela();
+cli.criaJanela();
+cli.btn_enviar.setMnemonic(KeyEvent.VK_ENTER);
+cli.btn_enviar.addActionListener(new ActionListener() {
+	public void actionPerformed(ActionEvent e) {
+		click(e);
+		
+	}
+		
+});
+
+new Cliente("10.72.2.138", 8080, cli).executa();
+
+}
+
 
 }
