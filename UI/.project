@@ -3,6 +3,11 @@
 	<name>UI</name>
 	<comment></comment>
 	<projects>
+		<project>BO</project>
+		<project>chat</project>
+		<project>Component</project>
+		<project>TO</project>
+		<project>Util</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
