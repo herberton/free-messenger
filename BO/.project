@@ -3,6 +3,9 @@
 	<name>BO</name>
 	<comment></comment>
 	<projects>
+		<project>DAO</project>
+		<project>TO</project>
+		<project>Util</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
