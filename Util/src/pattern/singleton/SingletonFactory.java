@@ -53,6 +53,6 @@ public class SingletonFactory {
     	}  
           
         public T getSingleton() { return this.singleton; }  
-        public void setSingleton(T singleton) { this.singleton = singleton; }  
+        //public void setSingleton(T singleton) { this.singleton = singleton; }  
     } 
 }
