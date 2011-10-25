@@ -19,6 +19,7 @@ public class Teste {
 							.getSingleton();
 			
 			
+			
 			bo2 =
 				SingletonFactory
 					.getSingletonFactory()
