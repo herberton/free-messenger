@@ -25,7 +25,7 @@ public class Teste {
 						.getInstance(ClienteBO.class)
 							.getSingleton();
 			
-			System.out.println("Os objetos BO estão no mesmo endereço de memória? " + (bo1 == bo2));
+			System.out.println(bo1 == bo2);
 			
 		} catch (SingletonException e) {
 			e.printStackTrace();
@@ -39,7 +39,7 @@ public class Teste {
 			bo1.select(to);
 			bo2.select(to);
 			
-			System.out.println("Os objetos DAO estão no mesmo endereço de memória? " + (bo1.getDAO() == bo2.getDAO())); 
+			System.out.println(bo1.getDAO() == bo2.getDAO()); 
 			
 		} catch (BOException e) {
 			e.printStackTrace();
