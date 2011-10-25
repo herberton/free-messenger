@@ -3,6 +3,8 @@
 	<name>DAO</name>
 	<comment></comment>
 	<projects>
+		<project>TO</project>
+		<project>Util</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
