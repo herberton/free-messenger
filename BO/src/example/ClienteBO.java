@@ -9,7 +9,8 @@ import exception.SingletonException;
 
 
 public class ClienteBO extends ABOTO<ClienteTO> {
-
+	
+	// GETTERS...
 	@Override
 	protected ADAOTO<ClienteTO> getDAO() throws SingletonException {
 		return 
@@ -18,5 +19,4 @@ public class ClienteBO extends ABOTO<ClienteTO> {
 					.getInstance(ClienteDAO.class)
 						.getSingleton();
 	}
-	
 }
