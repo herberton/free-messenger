@@ -7,17 +7,22 @@ import exception.DAOException;
 
 
 public class ClienteDAO extends ADAOTO<ClienteTO> {
-
+	
+	// INSERT...
 	@Override
 	public void insert(ClienteTO to) throws DAOException {
 		
 	}
-
+	
+	
+	// UPDATE...
 	@Override
 	public void update(ClienteTO to) throws DAOException {
 		
 	}
-
+	
+	
+	// DELETE...
 	@Override
 	public void delete(ClienteTO to) throws DAOException {
 		
@@ -27,7 +32,9 @@ public class ClienteDAO extends ADAOTO<ClienteTO> {
 	public void deleteByID(Long id) throws DAOException {
 		
 	}
-
+	
+	
+	// SELECT...
 	@Override
 	public ClienteTO select(ClienteTO to) throws DAOException {
 		System.out.println(to.getID());
