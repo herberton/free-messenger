@@ -3,6 +3,9 @@
 	<name>Component</name>
 	<comment></comment>
 	<projects>
+		<project>BO</project>
+		<project>TO</project>
+		<project>Util</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
